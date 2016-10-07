@@ -1,7 +1,7 @@
-<h3>Title: {{ found.myTitle }}</h3>
 <ol>
-  <li ng-repeat="item in crtl.found">
-    {{ item.quantity }} of {{ item.name }}
-    <button ng-click="found.onRemove({index: $index});">Don't want this one</button>
+  <li ng-repeat="item in ctrl.found">
+		{{ item.name }}, {{ item.short_name }}, <br>
+		{{ item.description }}
+    <button ng-click="ctrl.onRemove({index: $index});" style="float: right;">Don't want this one</button>
   </li>
 </ol>
